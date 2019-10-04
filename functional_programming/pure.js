@@ -4,6 +4,7 @@
 const f = x => x + 1;
 // obvious, you pass in the number and interacts inside with the 1 and returns the output
 
+// Impure functions //
 // Example - Global State:
 const COST_OF_ITEM = 19;
 const cartTotal = quantity => COST_OF_ITEM * quantity;
