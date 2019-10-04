@@ -31,4 +31,4 @@ const multiplyBy10 = multiply(10);
 console.log(multiplyBy10(30)); // 300
 console.log(multiplyBy10(-23)); // -230
 
-//
+// Arity
