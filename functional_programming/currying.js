@@ -31,4 +31,10 @@ const multiplyBy10 = multiply(10);
 console.log(multiplyBy10(30)); // 300
 console.log(multiplyBy10(-23)); // -230
 
-// Arity
+// Arity -> the number of arguments a function receives
+// Depending on the number it receives, there are specific words to describe these functions.
+// 1 argument = unary
+// 2 arguments = binary
+// 3 arguments = ternary
+// 4 arguments = quaternary
+// Therefore currying is the act of taking multivariate functions and refactoring it into a series of unary functions.
