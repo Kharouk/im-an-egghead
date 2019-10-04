@@ -42,4 +42,4 @@ console.log(createFoodItem('cheese'));
 console.log(id); // is now mutated and not like its original self :(
 
 // Example - Side Effects #2 - Outside World
-// console.log() is an impure function
+// console.log() is an impure function! It creates a side effect in the outside world. It affects the terminal. Any function that uses console.log renders it impure as well.
