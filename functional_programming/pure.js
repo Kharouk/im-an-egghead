@@ -28,3 +28,18 @@ console.log(createUser('Alex', 24));
 // To fix this, we can move the impure function outside of the factory and call it somewhere wehre we're expecting the side effect to happen, and pass the ID as a parameter into the `createUser` factory function
 
 // Example - Side Effects #1
+let id = 0;
+// if we have a function that mutates the id, it is an impure function
+const createFoodItem = name => ({
+  id: ++id,
+  name
+});
+
+console.log(createFoodItem('pizza'));
+console.log(createFoodItem('salad'));
+console.log(createFoodItem('toast'));
+console.log(createFoodItem('cheese'));
+console.log(id); // is now mutated and not like its original self :(
+
+// Example - Side Effects #2 - Outside World
+// console.log() is an impure function
