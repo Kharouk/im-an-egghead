@@ -1,5 +1,5 @@
-exports.compose = (...fns) => x =>
-  fns.reduceRight((acc, fn) => fn(acc), x);
+exports.compose = (...fns) => initialText =>
+  fns.reduceRight((acc, fn) => fn(acc), initialText);
 
 exports.scream = str => str.toUpperCase();
 exports.exclaim = str => `${str}!`;
