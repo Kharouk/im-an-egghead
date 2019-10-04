@@ -25,7 +25,7 @@ const quote = 'Functional Programming is great';
 console.log(repeat(exclaim(scream(quote)))); // another example of composition but still has nesting
 
 // Let's create a HOF:
-const compose = (...fns) => x =>
+compose = (...fns) => x =>
   fns.reduceRight((acc, fn) => fn(acc), x);
 
 withExuberance = compose(
