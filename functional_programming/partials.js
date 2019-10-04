@@ -12,5 +12,16 @@ const getFromAPI = baseURL => endpoint => cb =>
     });
 
 const getFromGithub = getFromAPI(`https://api.github.com`);
+// here we give the baseUrl but have partially applied different endpoints!
 const getUsers = getFromGithub('/users');
 const getRepos = getFromGithub('/repositories');
+
+getUsers(data => {
+  console.log(data.map(user => user.login));
+  return data.map(user => user.login);
+});
+
+getRepos(data => {
+  console.log(data.map(repo => repo.name));
+  return data.map(repo => repo.name);
+});
